@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.sidebar{
+    background-color: rgb(0, 14, 116);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:60px;
+    transition: opacity(0.5s);
+    opacity: 1;
+}
+.sidebar.fade-out{
+    opacity: 0.3;
+}
+.sidebar_left{
+    color:aliceblue;
+    margin-left: 30px;
+    font-size: 20px;
+    width:50%;
+}
+.sidebar_right{
+    color:aliceblue; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+    margin-right: 70px;
+    font-size: 20px;
+}
+.introduce{
+    background-image: url("https://nvandai1111.000webhostapp.com/bai60/anh60/bg_introduce.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+}
+.introduce_text{
+    color: aliceblue;
+    margin-left: 100px;
+    font-size:  30px;
+}
+.introduce_text p{
+    margin-bottom: 10px;
+}
+.introduce_img{
+    margin-left: 100px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduce_img img{
+    margin-top: 200px;
+    width:100%;
+    height: auto;
+}
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutme img{
+    width:500px;
+    border-radius: 5%;
+}
+.aboutme_text{
+    color:rgb(11, 1, 60);
+    flex:0.5;
+}
+.aboutme_text p{
+    font-size:25px;
+    line-height: 50px;
+}
+.projects{
+    padding:8px;
+    margin-top: 50px;
+    background-color: #200283;
+    color: aliceblue;
+}
+.body-projects{
+    height:700px;
+}
+.slide-show {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slide-show img{
+    width: 75%;
+    padding: 20px;
+}
+#back{
+    margin-left: 175px;
+}
+#next, #back{
+    bottom:50%;
+    color:aliceblue;
+    font-size:30px;
+    cursor: pointer;
+}
+.slide-show #next{
+    left:30%;
+}
+.text {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.text:hover, .text:focus {
+    background-color: #2980B9;
+}
+.content {
+    position: relative;
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    width:80px;
+}
+  
+.projects-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.projects-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.content a:hover {
+    background-color: #ddd;
+}
+.show{
+    display: block;
+}
+.service{
+    background-image: url(https://nvandai1111.000webhostapp.com/bai60/anh60/service.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:1px;
+    color:white;
+}
+.service_element{
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+}
+.service_element::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.service i{
+    font-size: 100px;
+}
+.service p{
+    font-size: 25px;
+}
+.col{
+    width:32%;
+    float:left;
+    height:100%;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #163b96;
+    margin-top: -40px;
+    height: 450px;
+}
+.container h1{
+    color: white;
+    padding:50px;
+}
+.testi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.testi__comments-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 7px;
+    margin-left: 5px;
+}
+.comments__block-img {
+    width: 60px;
+    flex: 1;
+}
+.comments {
+    line-height: 16px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-left: 4px;
+    position: relative;
+    bottom: 40px;
+    padding: 4px;
+}
+.contact{
+    padding-top: 48px;
+    background-color: rgb(2, 2, 47);
+    color:white;
+    height:850px;
+}
+.contact p{
+    color: white;
+}
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-text {
+    font-size: 25px;
+    line-height: 24px;
+    color: #373832;
+    padding: 12px 0 24px;
+}
+.email {
+    font-size: 25px;
+}
+.contact__form form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.ip-name , .ip-email {
+    flex: 1;
+}
+.ip-name {
+    margin-right: 12px;
+}
+.contact__subhead {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.form__heading {
+    font-size: 24px;
+    text-align: center;
+}
+.form__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact__form input {
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.contact__form input:focus {
+    border-color: #000;
+}
+.ip-title ,.ip-comments {
+    width: 100%;
+}
+.contact__info i {
+    font-size: 25px;
+    margin-right: 15px;
+}
+.icons i{
+    font-size:40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+html{
+    scroll-behavior:smooth ;
+}
+.introduce img{
+    transition: transform 0.5s;
+}
+.introduce img:hover {
+    transform: scale(1.5);
+}
+@media (max-width:768px){
+    .sidebar{
+        position:unset;
+        height: 450px;
+        display:flex;
+        flex-direction: column;
+    }
+    .sidebar_left{
+        width: 100%;
+    }
+    .sidebar_right{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        margin-left: 30px;
+    }
+    .introduce{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .introduce_text{
+        font-size: 20px;
+        margin: 0;
+
+    }
+    .introduce_img{
+        max-width: 98%;
+        margin: 0;
+    }
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme img{
+        max-width: 98%;
+    }
+    .slide-show{
+        max-width: 100%;
+        left: 0;
+        padding: 0 ;
+        margin:0;
+    }
+    #back{
+        margin: 0;
+    }
+    .service_element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        padding: 0;
+        height: 500px;
+    }
+    .testi{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .testi__comments-block{
+        margin-bottom: 15px;
+    }
+    .contact__form input{
+        max-width: 90%;
+    }
+    .form__information{
+        display: flex;
+        flex-direction: column;
+    }
+}

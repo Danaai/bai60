@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 60%</title>
+    <link href="bai60.css" rel="stylesheet">
+    <script src="./bai60.js"></script>
+    <script src="https://kit.fontawesome.com/74bc2e1438.js" crossorigin="anonymous"></script>
+</head>
+<body onload="load_images();">
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar_left">
+            <p>Nguyễn Văn Đại - 222001435</p>
+        </div>
+        <div class="sidebar_right">
+            <p><a href="#home">HOME</a></p>
+            <p><a href="#about">ABOUT ME</a></p>
+            <p><a href="#exercises">EXERCISES</a></p>
+            <p><a href="#services">SERVICES</a></p>
+            <p><a href="#testimonials">TESTIMONIALS</a></p>
+            <p><a href="#contact">CONTACT</a></p>
+        </div>
+    </div>
+    <span id="home"></span>
+    <div class="introduce">
+        <div class="introduce_text">
+            <p>Hello, My name is Nguyễn Văn Đại</p>
+            <p>Tôi hiện đang là sinh viên ngành công nghệ thông tin<br/> 
+            trường Đại học Thủ đô Hà Nội.</p>
+            <p>Đây là phần bài làm Web của tôi.</p>
+        </div>
+        <div class="introduce_img">
+            <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/introduce.jpg">   
+        </div>
+    </div>
+    <span id="about"></span>
+    <h1>ABOUT ME</h1>
+    <div class="aboutme">
+        <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/aboutme2.jpg">
+        <div class="aboutme_text">
+            <p>Xin chào các bạn, mình là Nguyễn Văn Đại. Mình hiện đang là sinh viên ngành 
+                Công nghệ thông tin của trường Đại học Thủ đô. Mình là một con người chăm 
+                chỉ, rất dễ hòa đồng và thân thiện. Mình rất thích chơi thể thao cũng như 
+                âm nhạc. Âm nhạc làm mình cảm thấy thoải mái và dễ chịu. Ngôi trường này là 
+                nơi nuôi dưỡng ước mơ. Mình cảm thấy thật đúng đắn khi chọn ngôi trường này.
+            </p>
+        </div>
+    </div>
+    <div class="projects">
+        <span id="exercises"></span>
+        <h1>EXERCISES</h1>
+        <div class="body-projects">
+            <div class="content">
+                <button onclick="myFunction1()" class="text">Buổi 1</button>
+                <div id="projects1" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai1.html" target="_blank">Bài 1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai2.1.html" target="_blank">Bài 2.1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai2.2.html" target="_blank">Bài 2.2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai2.3.html" target="_blank">Bài 2.3</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai3.html" target="_blank">Bài 3</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/buoi1bai4.html" target="_blank">Bài 4</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi1/LAB_B%C3%A0i1.html" target="_blank">LAB_Bài 1</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction2()" class="text">Buổi 2</button>
+                <div id="projects2" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2.html" target="_blank">Bài trên lớp</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai1.html" target="_blank">Bài 1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai2.1.html" target="_blank">Bài 2.1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai2.2.html" target="_blank">Bài 2.2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai3.1.html" target="_blank">Bài 3.1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai3.2.html" target="_blank">Bài 3.2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai3.3.html" target="_blank">Bài 3.3</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi2/buoi2bai4.html" target="_blank">Bài 4</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction3()" class="text">Buổi 3</button>
+                <div id="projects3" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi3/b3bai1.html" target="_blank">Bài 1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi3/b3bai2.html" target="_blank">Bài 2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi3/bai1trenlop.html" target="_blank">Bài 1 lớp</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi3/bai2trenlop.html" target="_blank">Bài 2 lớp</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction4()" class="text">Buổi 4</button>
+                <div id="projects4" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi4/b4bai1.html" target="_blank">Bài 1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi4/b4bai3.html" target="_blank">Bài 3</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi4/b4bai4.html" target="_blank">Bài 4</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi4/b4bai5.html" target="_blank">Bài 5</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction5()" class="text">Buổi 5</button>
+                <div id="projects5" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi5/buoi5.html" target="_blank">Bài trên lớp</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi5/buoi5bai1.html" target="_blank">Bài 1.1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi5/buoi5bai1.2.html" target="_blank">Bài 1.2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi5/buoi5bai2.html" target="_blank">Bài 2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi5/buoi5bai3.html" target="_blank">Bài 3</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction6()" class="text">Buổi 6</button>
+                <div id="projects6" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6.html" target="_blank">Btap trên lớp 1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6.1.html" target="_blank">Btap trên lớp 2</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6bai4.html" target="_blank">Bài 4</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6bai5.html" target="_blank">Bài 5</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6bai6.1.html" target="_blank">Bài 6.1</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi6/buoi6bai6.2.html" target="_blank">Bài 6.2</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction7()" class="text">Buổi 7</button>
+                <div id="projects7" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/buoi7/b7bai7.html" target="_blank">Bài 7</a>
+                    <a href="https://nvandai1111.000webhostapp.com/buoi7/b7bai8.html" target="_blank">Bài 8</a>
+                </div>
+            </div>
+            <div class="content">
+                <button onclick="myFunction8()" class="text">Bài 30%</button>
+                <div id="projects8" class="projects-content">
+                    <a href="https://nvandai1111.000webhostapp.com/baigiuaki.html" target="_blank">Bài 30%</a>
+                </div>
+            </div>
+            <div class="slide-show">
+                <div id="back" onclick="back();">&#10094;</div>
+                <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/btapb1.png" alt="btap images" id="btap">
+                <div id="next" onclick="next();">&#10095;</div>
+            </div>
+        </div>
+    </div>
+    <span id="services"></span>
+    <div class="service">
+        <h1>SERVICES</h1>
+        <div class="service_element">
+            <div class="col">
+                <i class="fa-solid fa-computer"></i>
+                <p>WEB DESIGN</p>
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-images"></i>
+                <p>GRAPHIC DESIGN</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-file-code"></i>
+                <p>C#</p>
+            </div>
+            <div class="col">
+                <i class="fa-brands fa-wordpress"></i>
+                <p>WORDPRESS</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-book"></i>
+                <p>TITLE CONTENT</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-people-group"></i>
+                <p>COMMUNICATION SKILL</p>
+            </div>
+        </div>
+        <span id="testimonials"></span>
+    </div>
+    <div class="container">
+        <h1>TESTIMONIALS</h1>
+        <div class="testi">
+            <div class="testi__comments-block">
+                <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/phuongdb.jpg" alt="" class="comments__block-img">
+                <div class="comments">
+                    <p class="coments__text">
+                        Đại thật là một người dễ gần và hiền lành. Đại thật có trách
+                        nhiệm trong công việc.
+                    </p>
+                </div>
+            </div>
+            <div class="testi__comments-block">
+                <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/longdb.jpg" alt="" class="comments__block-img">
+                <div class="comments">
+                    <p class="coments__text">
+                        Tôi đã tiếp xúc với bạn Đại rất nhiều. Tôi cảm thấy bạn là một 
+                        người rất ga lăng. Bạn rất hay giúp đỡ tôi khi tôi gặp khó khăn.
+                    </p>
+                </div>
+            </div>
+            <div class="testi__comments-block">
+                <img src="https://nvandai1111.000webhostapp.com/bai60/anh60/linhdb.jpg" alt="" class="comments__block-img">
+                <div class="comments">
+                    <p class="coments__text">
+                        Tôi rất quý mến Đại. Bạn ý vừa đẹp trai vừa tốt bụng lại còn hát
+                        rất hay.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="contact"></span>
+    <div class="contact"> 
+        <div class="contact__desc">
+            <h1>CONTACT</h1>
+            <div class="contact__info">
+                <p class="contact-text contact-email"><span class="contact__subhead"><i class="fa-regular fa-envelope"></i>        Email: </span><aclass="email">vandai11112004@gmail.com<a></p>
+                <p class="contact-text contact-phone"><span class="contact__subhead"><i class="fa-solid fa-phone"></i>         Số điện thoại: </span>0986499273</p>
+                <p class="contact-text contact-location"><span class="contact__subhead"><i class="fa-solid fa-location-dot"></i>    Nơi ở: </span>Hà Nội</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i> <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="contact__form">
+            <h2 class="form__heading">Hãy để lại thông tin liên lạc để tôi có thể hỗ trợ
+                bạn sớm nhất!
+            </h2>
+            <form action="">
+                <div class="form__information">
+                    <input type="text" placeholder="Your name" class="ip-name">
+                    <input type="email" placeholder="Your mail" class="ip-email">
+                </div>
+                <input type="text" placeholder="Title.." class="ip-title">
+                <input type="text" placeholder="Comments...." class="ip-comments">
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
